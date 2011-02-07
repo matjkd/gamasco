@@ -21,9 +21,20 @@
   <div id="container">
   	
     <header>
-    	<div class="container_12">
-    	<div id="logo"></div>
-    	<div id="top_menu"></div>
+    	<div class="container_24">
+    	
+    	<!-- Logo here --> 
+    	<div id="logo">
+    		<img width="346px" height="75px" src="<?=base_url()?>images/template/logo.png" alt="Gamasco Logo" />
+    	</div>
+    	<div id="top_menu">
+    		<ul>
+    		<li>Home</li>
+    		<li>About us</li>
+    		<li>Products</li>
+    		<li>Contact Us</li>
+    		</ul>
+    		</div>
 		
 		<div id="slide_area">
 			<?=$this->load->view('slideshow/slideshow')?>
@@ -34,27 +45,46 @@
     
     
     
-    <div class="container_12" id="main">
-main body
+    <div class="container_24" id="main">
+    	
+		<div class="container_24 grid_11">
+			<h1>Welcome to the GMS Company</h2>
+			<p>The GMS Company was formed over 25 years ago with the prime object of offering a range
+			of healthy alternatives to the then much used asbestos product range.</p>
+			
+			<p>Although asbestos is still readily available and still used in the UK, GMS have a suitable and superior safe alternative (Thermal textiles for industry, Gloves
+			for Foundry use, Prekev boiler joints, etc.)</p>
+		</div>
+		
+		<div id="side_box">
+			
+			
+		</div>
+	
+
     </div>
+    <div class="clear"></div>
  
  <div id="section2">   
-     <div class="container_12" >
-link area erererer<br/>
+     <div class="container_24" >
+
+<?=$this->load->view('global/links')?>
 
     </div>
  </div>
 
 
 <div id="section3">   
-     <div class="container_12" >
-footer 1
+     <div class="container_24" >
+The GMS Company. Gamasco House, 35 Hornsby Square, Southfields Industrial Park, Laindon, Essex SS15 6SD. <br/>
+Tel: 01268 419909 Fax: 01268 544346. Email office@gamasco.co.uk<br/>
+<strong>Europes Leading Supploer of Thermal Engineering Products</strong>
     </div>
  </div>
     
     
     <footer>
-    	<div class="container_12">
+    	<div class="container_24">
 footer 2
 		</div>
     </footer>

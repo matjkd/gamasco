@@ -1,10 +1,17 @@
 <style type="text/css"> 
 
-.box{width:960px; height:163px; text-align:left; border-right:0px none #c3c3c3; color:#FFFFFF; padding:8px;}
+.box{width:944px; height:163px; text-align:left; border-right:0px none #c3c3c3; color:#FFFFFF; padding:8px;}
 .box span{color:#999999; margin:0; padding:10px; float:left; width:400px}
 .box h2{color:#dddddd;}
 .box p{padding-top:10px;}
-.box img{float:right; padding-right:16px;}
+.rounded_img{
+float:right; 
+height: 147px;
+width: 479px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
 .message{display:none; position:relative; top:0; left:0;}
  
 .mstoplinks{padding:3px; border-bottom:2px solid #c3c3c3;}
@@ -20,16 +27,17 @@
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<img  src="<?=base_url()?>images/slides/sl1.png"/>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
   </div> 
   
+ 	
    <div class="box"> 
 		<span>
 		<h2>Plumbers Thermal Protection Mats</h2>
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<img  src="<?=base_url()?>images/slides/sl1.png"/>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
   </div> 
   
     <div class="box"> 
@@ -38,7 +46,7 @@
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<img  src="<?=base_url()?>images/slides/sl1.png"/>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
   </div> 
   
     <div class="box"> 
@@ -47,7 +55,7 @@
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<img  src="<?=base_url()?>images/slides/sl1.png"/>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
   </div> 
 </div> 
 
