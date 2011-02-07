@@ -1,0 +1,57 @@
+header {
+background: url('/images/template/headerback.jpg') repeat-x;
+height:320px;
+position:relative;
+}
+footer {
+background:#444444;
+color:#bbbbbb;
+}
+#logo {
+float:left;
+display:block;
+background: url('/images/template/logo.png');
+height:75px;
+width:346px;
+position:absolute;
+top: 50px;
+}
+
+
+#top_menu {
+background: url('/images/template/top_menu_back.png');
+float:right;
+height:37px;
+width:488px;
+-moz-box-shadow: 5px 5px 11px #191919;
+-webkit-box-shadow: 5px 5px 11px #191919;
+box-shadow: 5px 5px 11px #191919;
+border:none 5px #191919;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+#slide_area { 
+z-index:100;
+background: url('/images/template/slide_back.png');
+width:960px;
+height:163px;
+position:absolute;
+top: 135px;
+-moz-box-shadow: 5px 5px 11px #191919;
+-webkit-box-shadow: 5px 5px 11px #191919;
+box-shadow: 5px 5px 11px #191919;
+border:solid 1px #191919;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+#section2 {
+background:#FF0000;
+color:#DDDDDD;
+}
+#section3 {
+background:#000000;
+color:#DDDDDD;
+}

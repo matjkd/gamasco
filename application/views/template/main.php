@@ -14,17 +14,46 @@
 
 <body>
 
+
+
+
+
   <div id="container">
+  	
     <header>
-page header
+    	<div class="container_12">
+    	<div id="logo"></div>
+    	<div id="top_menu"></div>
+		
+		<div id="slide_area"></div>
+		
+		</div>
     </header>
     
-    <div id="main">
+    
+    
+    <div class="container_12" id="main">
 main body
     </div>
+ 
+ <div id="section2">   
+     <div class="container_12" >
+link area
+    </div>
+ </div>
+
+
+<div id="section3">   
+     <div class="container_12" >
+footer 1
+    </div>
+ </div>
+    
     
     <footer>
-page footer
+    	<div class="container_12">
+footer 2
+		</div>
     </footer>
   </div> 
 

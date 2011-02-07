@@ -19,7 +19,7 @@
   <!-- CSS : implied media="all" -->
   <link rel="stylesheet" href="<?=base_url()?>css/grid.css">
   <link rel="stylesheet" href="<?=base_url()?>css/style.css?v=2">
-
+  <link rel="stylesheet" href="<?=base_url()?>css/template.css">
 
   <link rel="stylesheet" media="handheld" href="<?=base_url()?>css/handheld.css?v=2">  
  
