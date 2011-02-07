@@ -50,6 +50,8 @@ border-radius: 8px;
 #section2 {
 background:#FF0000;
 color:#DDDDDD;
+background: url('/images/template/red_footer.jpg') #fd4109 0 0 repeat-x;
+min-height:168px;
 }
 #section3 {
 background:#000000;

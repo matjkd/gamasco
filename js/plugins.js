@@ -38,3 +38,25 @@ window.log = function(){
 })(document);
 
 
+//carousel
+$(document).ready(function() {	
+var counter = $("#carouseldiv div.box").length;
+	try {
+		var oHandlerHorizontal = $("#carouseldiv").msCarousel({boxClass:'div.box', width:960, height:163, scrollSpeed:500, autoSlide:6000}).data("msCarousel");
+		$("#play").click(function() {
+			oHandlerHorizontal.play();
+			$("#play").hide();
+			$("#pause").show();
+		});
+		$("#pause").click(function() {
+			oHandlerHorizontal.pause();		
+			$("#play").show();
+			$("#pause").hide();			
+		});
+		
+	} catch(e) {
+		alert(e);
+		alert(e.message);
+	}
+	
+})

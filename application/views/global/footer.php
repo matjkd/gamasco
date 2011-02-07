@@ -17,14 +17,11 @@
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
 
-  <!-- yui profiler and profileviewer - remove for production -->
-  <script src="js/profiling/yahoo-profiling.min.js"></script>
-  <script src="js/profiling/config.js"></script>
-  <!-- end profiling code -->
+
 
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
-       change the UA-XXXXX-X to be your site's ID -->
+       change the UA-XXXXX-X to be your site's ID 
   <script>
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
    (function(d, t) {
@@ -35,3 +32,4 @@
     s.parentNode.insertBefore(g, s);
    })(document, 'script');
   </script>
+  -->

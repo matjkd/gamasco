@@ -20,8 +20,9 @@
   <link rel="stylesheet" href="<?=base_url()?>css/grid.css">
   <link rel="stylesheet" href="<?=base_url()?>css/style.css?v=2">
   <link rel="stylesheet" href="<?=base_url()?>css/template.css">
-
+  <link rel="stylesheet" href="<?=base_url()?>css/mscarousel.css">
   <link rel="stylesheet" media="handheld" href="<?=base_url()?>css/handheld.css?v=2">  
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="<?=base_url()?>js/libs/modernizr-1.6.min.js"></script>
+   

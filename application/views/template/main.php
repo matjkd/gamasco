@@ -25,7 +25,9 @@
     	<div id="logo"></div>
     	<div id="top_menu"></div>
 		
-		<div id="slide_area"></div>
+		<div id="slide_area">
+			<?=$this->load->view('slideshow/slideshow')?>
+		</div>
 		
 		</div>
     </header>
@@ -38,7 +40,8 @@ main body
  
  <div id="section2">   
      <div class="container_12" >
-link area
+link area erererer<br/>
+
     </div>
  </div>
 
