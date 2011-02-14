@@ -19,7 +19,7 @@ border-radius: 5px;
 .mstoplinks a.active, .mstoplinks a.active:visited{color:#003366; text-decoration:none; border-right:1px solid #c3c3c3; padding:0 10px;border-bottom:1px solid #c3c3c3; border-left:1px solid #c3c3c3; }
  
 </style>
-<div id="carouseldiv" > 
+<div id="carouseldiv" style="display:none;"> 
 	
   <div class="box"> 
 		<span>

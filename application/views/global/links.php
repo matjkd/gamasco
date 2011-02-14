@@ -1,18 +1,8 @@
+<?php foreach($cats as $row): ?>
 <div class="container_24 grid_6">
-			<h1>Keramab</h1>
+			<h1><?=$row->cat_name?></h1>
 </div>
-
-<div class="container_24 grid_6">
-		<h1>Thermapad</h1>
-</div>
-
-<div class="container_24 grid_6">
-		<h1>Flame Barrier</h1>
-</div>
-
-<div class="container_24 grid_6">
-		<h1>Prekev</h1>
-</div>
+<?php endforeach; ?>
 
 
 <div class="clear"></div>

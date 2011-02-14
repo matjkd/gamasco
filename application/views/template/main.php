@@ -48,12 +48,8 @@
     <div class="container_24" id="main">
     	
 		<div class="container_24 grid_11">
-			<h1>Welcome to the GMS Company</h2>
-			<p>The GMS Company was formed over 25 years ago with the prime object of offering a range
-			of healthy alternatives to the then much used asbestos product range.</p>
 			
-			<p>Although asbestos is still readily available and still used in the UK, GMS have a suitable and superior safe alternative (Thermal textiles for industry, Gloves
-			for Foundry use, Prekev boiler joints, etc.)</p>
+			<?=$this->load->view('global/content')?>
 		</div>
 		
 		<div id="side_box">
@@ -65,13 +61,16 @@
     </div>
     <div class="clear"></div>
  
+ 
+ <?php if(isset($section2)) { ?>
  <div id="section2">   
      <div class="container_24" >
 
-<?=$this->load->view('global/links')?>
+		<?=$this->load->view($section2)?>
 
     </div>
  </div>
+ <?php } ?>
 
 
 <div id="section3">   

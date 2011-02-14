@@ -5,10 +5,12 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="<?=base_url()?>js/libs/jquery-1.5.0.js"%3E%3C/script%3E'))</script>
   
+
   
   <!-- scripts concatenated and minified via ant build script-->
+    <script src="<?=base_url()?>js/script.js"></script>
   <script src="<?=base_url()?>js/plugins.js"></script>
-  <script src="<?=base_url()?>js/script.js"></script>
+
   <!-- end concatenated and minified scripts-->
   
   
