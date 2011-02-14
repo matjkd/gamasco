@@ -18,6 +18,7 @@ class Welcome extends CI_Controller {
 		$data['menu'] = 'home';	
 		$data['title'] = 'The GMS Company.';	
 		$data['content'] = $this->content_model->get_content($data['menu']);
+		$data['main_content'] = "global/content";
 		$data['cats'] = $this->products_model->get_cats();
 		$data['age'] = '25';
 		$data['section2'] = 'global/links';

@@ -49,7 +49,7 @@
     	
 		<div class="container_24 grid_11">
 			
-			<?=$this->load->view('global/content')?>
+			<?=$this->load->view($main_content)?>
 		</div>
 		
 		<div id="side_box">

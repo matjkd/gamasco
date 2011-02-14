@@ -1,3 +1,28 @@
+h1 {
+  font-family: 'Raleway', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+h2 {
+  font-family: 'Raleway', serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+
 header {
 background: url('/images/template/headerback.jpg') repeat-x;
 height:320px;

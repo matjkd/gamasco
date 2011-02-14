@@ -1,6 +1,6 @@
 <?php foreach($cats as $row): ?>
 <div class="container_24 grid_6">
-			<h1><?=$row->cat_name?></h1>
+			<h2><?=$row->cat_name?></h2>
 </div>
 <?php endforeach; ?>
 
