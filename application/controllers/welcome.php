@@ -14,7 +14,7 @@ class Welcome extends MY_Controller {
 	}
 	function home()
 	{
-		$this->session->set_flashdata('message', "login failed.");
+		
 		if($this->session->flashdata('message'))
 			{
 				$data['message'] = $this->session->flashdata('message'); 	
@@ -25,10 +25,44 @@ class Welcome extends MY_Controller {
 		$data['content'] = $this->content_model->get_content($data['menu']);
 		$data['main_content'] = "global/content";
 		$data['cats'] = $this->products_model->get_cats();
+		$data['products'] = $this->products_model->get_all_products();
 		$data['age'] = '25';
 		$data['section2'] = 'global/links';
 		$this->load->vars($data);
 		$this->load->view('template/main');
+	}
+	function main()
+	{
+		$segment_active = $this->uri->segment(3);
+		if ($segment_active!=NULL)
+			{
+				$data['menu'] = $this->uri->segment(3);
+			}
+		else
+			{
+				$data['menu'] = 'home';	
+			}
+		
+		$data['content'] = $this->content_model->get_content($data['menu']);
+		
+		foreach($data['content'] as $row):
+			
+			$data['title'] = $row->title;
+		
+		endforeach;
+		$data['main_content'] = "global/content";
+		$data['cats'] = $this->products_model->get_cats();
+		$data['products'] = $this->products_model->get_all_products();
+		$data['section2'] = 'global/links';
+		if($this->session->flashdata('message'))
+			{
+				$data['message'] = $this->session->flashdata('message'); 	
+			}	
+		
+		$data['slideshow'] = 'header/slideshow';	
+		$this->load->vars($data);
+		$this->load->view('template/main');
+		
 	}
 	
 	function login()

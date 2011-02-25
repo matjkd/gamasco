@@ -31,9 +31,8 @@ class Admin extends MY_Controller {
 		$this->load->vars($data);
 		$this->load->view('template/main');
 		
-		
-		
 	}
+	
 	function edit()
 	{
 		
