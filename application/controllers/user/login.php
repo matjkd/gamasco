@@ -22,7 +22,8 @@ function Login()
 	
 	}
 	function validate_credentials()
-	{		
+	{
+		$this->session->set_flashdata('message', "test.");		
 		$this->load->model('membership_model');
 		$query = $this->membership_model->validate();
 		
@@ -56,18 +57,14 @@ function Login()
 			);
 			
 			$this->session->set_userdata($data);
-			$this->session->set_flashdata('conf_msg', "welcome.");
-			redirect('welcome/login');
+			$this->session->set_flashdata('message', "welcome.");
+			redirect('welcome/login', 'refresh');
 		}
 		else // incorrect username or password
 		{
-			$id = 'login';
-			$data['content'] =	$this->content_model->get_content($id);
-			$data['title'] = 'Login Failed';
-			$data['main_content'] = 'user/login_failed';
-			$this->load->vars($data);
-			$this->load->view('template');
-			
+				
+			$this->session->set_flashdata('message', "login failed!!.");
+			redirect('welcome/login', 'refresh');
 			
 		}
 	}	

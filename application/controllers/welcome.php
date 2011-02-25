@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends MY_Controller {
 
 	function __construct()
 	{
@@ -14,6 +14,11 @@ class Welcome extends CI_Controller {
 	}
 	function home()
 	{
+		$this->session->set_flashdata('message', "login failed.");
+		if($this->session->flashdata('message'))
+			{
+				$data['message'] = $this->session->flashdata('message'); 	
+			}	
 			
 		$data['menu'] = 'home';	
 		$data['title'] = 'The GMS Company.';	
@@ -28,10 +33,12 @@ class Welcome extends CI_Controller {
 	
 	function login()
 	{
-		
+		if($this->session->flashdata('message'))
+			{
+				$data['message'] = $this->session->flashdata('message'); 	
+			}	
 		$id = 'login';
 		$data['content'] =	$this->content_model->get_content($id);
-		
 		$data['main_content'] = "user/login_form";
 		$data['title'] = "Login to Gamasco";
 		

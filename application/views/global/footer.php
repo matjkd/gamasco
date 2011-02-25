@@ -9,6 +9,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
   
   <!-- scripts concatenated and minified via ant build script-->
+    <script src="<?=base_url()?>js/wymeditor/jquery.wymeditor.min.js"></script>
     <script src="<?=base_url()?>js/script.js"></script>
   <script src="<?=base_url()?>js/plugins.js"></script>
 

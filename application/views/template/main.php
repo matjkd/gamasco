@@ -27,14 +27,8 @@
     	<div id="logo">
     		<img width="346px" height="75px" src="<?=base_url()?>images/template/logo.png" alt="Gamasco Logo" />
     	</div>
-    	<div id="top_menu">
-    		<ul>
-    		<li>Home</li>
-    		<li>About us</li>
-    		<li>Products</li>
-    		<li>Contact Us</li>
-    		</ul>
-    		</div>
+    	
+    	<?=$this->load->view('global/menu')?>
 		
 		<div id="slide_area">
 			<?=$this->load->view('slideshow/slideshow')?>
@@ -46,18 +40,27 @@
     
     
     <div class="container_24" id="main">
-    	
+    <?php if(isset($sidebox)) { ?>	
 		<div class="container_24 grid_11">
-			
+			<?=$this->load->view('global/alert')?>
+	
 			<?=$this->load->view($main_content)?>
 		</div>
 		
+	
 		<div id="side_box">
 			
 			
 		</div>
+	<?php } else {?>
 	
-
+	<div class="container_24 grid_24">
+			<?=$this->load->view('global/alert')?>
+	
+			<?=$this->load->view($main_content)?>
+		</div>
+	
+	<?php } ?>
     </div>
     <div class="clear"></div>
  

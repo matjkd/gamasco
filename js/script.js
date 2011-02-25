@@ -36,7 +36,10 @@ window.log = function(){
   };
 })(document);
 
-
+//wymeditor
+jQuery(function() {
+    jQuery('.wymeditor').wymeditor();
+});
 //carousel
 $(document).ready(function() {	
 var counter = $("#carouseldiv div.box").length;
@@ -175,3 +178,4 @@ jQuery.fn.pngFix = function(settings) {
 };
 
 })(jQuery);
+
