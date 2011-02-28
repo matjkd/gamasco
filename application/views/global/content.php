@@ -10,7 +10,7 @@ $is_logged_in = $this->session->userdata('is_logged_in');
 		}	
 
 ?>
-
-<?=$row->content?>
+<?php $body = str_replace("[age]", "$age", "$row->content");?>
+<?=$body?>
 
 <?php endforeach;?>

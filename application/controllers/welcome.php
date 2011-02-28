@@ -26,7 +26,7 @@ class Welcome extends MY_Controller {
 		$data['main_content'] = "global/content";
 		$data['cats'] = $this->products_model->get_cats();
 		$data['products'] = $this->products_model->get_all_products();
-		$data['age'] = '25';
+		$data['age'] = '28';
 		$data['section2'] = 'global/links';
 		$this->load->vars($data);
 		$this->load->view('template/main');
