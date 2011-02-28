@@ -11,7 +11,11 @@ class Products_model extends CI_Model {
     
     function get_cats()
 	{
+			
+			$this->db->order_by('order');
 		$query = $this->db->get('categories');
+		
+
 		return $query->result();
 	}
     
@@ -39,4 +43,24 @@ class Products_model extends CI_Model {
 		
 		return FALSE;
 	}
+	
+	function edit_product($id)
+		{
+			
+			
+    				$content_update = array(
+    				'product_desc' => $this->input->post('content'),
+    				'menu' => $this->input->post('menu'),
+    				'product_name' => $this->input->post('title'),
+					'extra' => $this->input->post('extra')
+    				);
+					
+					
+					
+		
+		$this->db->where('menu', $id);
+		$update = $this->db->update('products', $content_update);
+		return $update;
+		}
+	
 }

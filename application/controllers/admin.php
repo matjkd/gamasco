@@ -44,12 +44,24 @@ class Admin extends MY_Controller {
 		
 		$data['main_content'] = "admin/edit_content";
 		
-		if($data['menu'] == 'services')
-			{
-				$data['service_groups'] = $this->content_model->get_service_groups();
-				$data['services'] = $this->content_model->get_services();
-			} 
+		
 	
+		$this->load->vars($data);
+		$this->load->view('template/main');
+	}
+
+function edit_product()
+	{
+		
+		
+		$id = $this->uri->segment(3);
+		$data['menu'] = $id;
+		$data['page'] = $id;
+		$data['content'] =	$this->products_model->get_product($id);
+		
+		$data['main_content'] = "admin/edit_product";
+		
+			
 		$this->load->vars($data);
 		$this->load->view('template/main');
 	}
@@ -59,6 +71,14 @@ class Admin extends MY_Controller {
 		$this->content_model->edit_content($id);
 		
 		redirect ("admin/edit/$id");
+	}
+	
+	function edit_product_content()
+	{
+		$id = $this->uri->segment(3);
+		$this->products_model->edit_product($id);
+		
+		redirect ("products/main/$id");
 	}
 function create_news()
 	{

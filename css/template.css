@@ -22,11 +22,19 @@ h2 {
   word-spacing: 0em;
   line-height: 1.2;
 }
+p {
 
+padding-top:10px;
+padding-bottom:10px;
+
+}
 header {
 background: url('/images/template/headerback.jpg') repeat-x;
 height:320px;
 position:relative;
+}
+.maincontent {
+padding-top:20px;
 }
 footer {
 background:#444444;
@@ -85,9 +93,10 @@ border-radius: 8px;
 }
 #side_box {
 background:#ffffff;
-width:480px;
+padding:20px;
+width:440px;
 margin-bottom:16px;
-height:260px;
+min-height:280px;
 float:right;
 -moz-box-shadow: 5px 5px 11px #191919;
 -webkit-box-shadow: 5px 5px 11px #191919;
@@ -96,6 +105,11 @@ border:solid 1px #aaaaaa;
 -moz-border-radius: 8px;
 -webkit-border-radius: 8px;
 border-radius: 8px;
+}
+
+#side_box  img {
+
+
 }
 #section2 {
 padding-top:20px;

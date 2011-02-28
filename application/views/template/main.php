@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onload="initialize()" onunload="GUnload()">
 
 
 
@@ -44,20 +44,23 @@
 		<div class="container_24 grid_11">
 			<?=$this->load->view('global/alert')?>
 	
+			<div class="maincontent">
 			<?=$this->load->view($main_content)?>
+			</div>
 		</div>
 		
 	
 		<div id="side_box">
-			
-			
+			<?=$this->load->view($sidebox)?>
 		</div>
 	<?php } else {?>
 	
 	<div class="container_24 grid_24">
 			<?=$this->load->view('global/alert')?>
 	
+			<div class="maincontent">
 			<?=$this->load->view($main_content)?>
+			</div>
 		</div>
 	
 	<?php } ?>

@@ -23,11 +23,16 @@ class Welcome extends MY_Controller {
 		$data['menu'] = 'home';	
 		$data['title'] = 'The GMS Company.';	
 		$data['content'] = $this->content_model->get_content($data['menu']);
+		foreach($data['content'] as $row):
+			$data['sidebox'] = $row->sidebox;
+		endforeach;
+		
 		$data['main_content'] = "global/content";
 		$data['cats'] = $this->products_model->get_cats();
 		$data['products'] = $this->products_model->get_all_products();
-		$data['age'] = '28';
+		
 		$data['section2'] = 'global/links';
+		
 		$this->load->vars($data);
 		$this->load->view('template/main');
 	}
@@ -48,6 +53,7 @@ class Welcome extends MY_Controller {
 		foreach($data['content'] as $row):
 			
 			$data['title'] = $row->title;
+			$data['sidebox'] = $row->sidebox;
 		
 		endforeach;
 		$data['main_content'] = "global/content";

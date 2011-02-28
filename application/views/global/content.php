@@ -10,7 +10,15 @@ $is_logged_in = $this->session->userdata('is_logged_in');
 		}	
 
 ?>
-<?php $body = str_replace("[age]", "$age", "$row->content");?>
+
+<?php if(isset($age)) { $body = str_replace("[age]", "$age", "$row->content"); }
+else {
+	$body = $row->content;
+}?>
+
+
+<?php  $body = str_replace("THERMAPAD", "<strong>THERMAPAD</strong>", "$body");?>
+<?php  $body = str_replace("The GMS Company", "<strong>The GMS Company</strong>", "$body");?>
 <?=$body?>
 
 <?php endforeach;?>

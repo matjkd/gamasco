@@ -36,10 +36,15 @@ window.log = function(){
   };
 })(document);
 
+
+
+
 //wymeditor
 jQuery(function() {
     jQuery('.wymeditor').wymeditor();
 });
+
+
 //carousel
 $(document).ready(function() {	
 var counter = $("#carouseldiv div.box").length;
@@ -63,6 +68,17 @@ var counter = $("#carouseldiv div.box").length;
 	$('#carouseldiv').css("display", "block");
 	
 })
+
+//jquery cycle
+$(document).ready(function() {
+    $('.cycle').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speedIn:  2000, 
+	    speedOut: 2000, 
+	   timeout:   15000 
+	});
+	$('.cycle').css("display", "block");
+});
 
 
 /**
@@ -177,5 +193,43 @@ jQuery.fn.pngFix = function(settings) {
 
 };
 
+
+
+
 })(jQuery);
 
+//map
+
+
+  var nash = new google.maps.LatLng(51.575456,0.400926);
+  var parliament = new google.maps.LatLng(51.575456,0.400926);
+  var marker;
+  var map;
+ 
+  function initialize() {
+    var mapOptions = {
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: nash
+    };
+ 
+    map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+          
+    marker = new google.maps.Marker({
+      map:map,
+      draggable:true,
+      animation: google.maps.Animation.DROP,
+      position: parliament
+    });
+    google.maps.event.addListener(marker, 'click', toggleBounce);
+  }
+ 
+  function toggleBounce() {
+ 
+    if (marker.getAnimation() != null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }

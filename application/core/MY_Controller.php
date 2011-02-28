@@ -10,6 +10,8 @@ class MY_Controller extends CI_Controller {
 	$config_data['config_version'] = "0.0.5";
 	$config_data['config_email'] = "";
 	
+	$config_data['age'] = "28";
+	
 	$this->config_email = 'info@thedesigncompany.com';
 	$this->config_company_name = 'Gamasco';
 	$this->load->vars($config_data);

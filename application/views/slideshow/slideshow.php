@@ -24,7 +24,7 @@ border-radius: 5px;
   <div class="box"> 
 		<span>
 		<h2>Plumbers Thermal Protection Mats</h2>
-		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
+		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
 		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
@@ -34,7 +34,7 @@ border-radius: 5px;
    <div class="box"> 
 		<span>
 		<h2>Plumbers Thermal Protection Mats</h2>
-		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
+		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
 		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
@@ -43,7 +43,7 @@ border-radius: 5px;
     <div class="box"> 
 		<span>
 		<h2>Plumbers Thermal Protection Mats</h2>
-		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
+		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
 		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
@@ -52,7 +52,7 @@ border-radius: 5px;
     <div class="box"> 
 		<span>
 		<h2>Plumbers Thermal Protection Mats</h2>
-		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past 14 years, using high quality materials meeting the highest Health and Safety standards.
+		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
 		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>

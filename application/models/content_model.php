@@ -42,24 +42,6 @@ class Content_model extends CI_Model {
 		return $update;
 		}
 		
-	function edit_product($id)
-		{
-			
-			
-    				$content_update = array(
-    				'product_desc' => $this->input->post('content'),
-    				'menu' => $this->input->post('menu'),
-    				'product_name' => $this->input->post('title'),
-					'extra' => $this->input->post('extra')
-    				);
-					
-					
-					
-		
-		$this->db->where('menu', $id);
-		$update = $this->db->update('content', $content_update);
-		return $update;
-		}
 	
 	function get_all_products()
 	{
