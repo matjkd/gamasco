@@ -13,8 +13,8 @@
 
   <!-- scripts concatenated and minified via ant build script-->
     <script src="<?=base_url()?>js/wymeditor/jquery.wymeditor.min.js"></script>
-    <script src="<?=base_url()?>js/script.js"></script>
   <script src="<?=base_url()?>js/plugins.js"></script>
+      <script src="<?=base_url()?>js/script.js"></script>
 
   <!-- end concatenated and minified scripts-->
   

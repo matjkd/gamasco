@@ -146,3 +146,12 @@ text-align:center;
 background:#000000;
 color:#aaaaaa;
 }
+/* Contact Form */
+
+#contact_form input {
+	width:10px;
+}
+
+#contact_form textarea {
+	width:50px;
+}

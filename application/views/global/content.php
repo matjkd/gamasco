@@ -22,3 +22,10 @@ else {
 <?=$body?>
 
 <?php endforeach;?>
+
+
+	<?php foreach($content as $row):?>
+			<?php if($row->extra != NULL) {?>
+			<?=$this->load->view('extra/'.$row->extra)?>
+			<?php }?>
+	<?php endforeach;?>
