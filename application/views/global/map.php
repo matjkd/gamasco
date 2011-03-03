@@ -1,2 +1,2 @@
 
-<div id="map_canvas" style="width:440px; height: 300px; float:left;"></div>
+<div id="map_canvas" style="width:440px; height: 400px; float:left;"></div>

@@ -12,7 +12,7 @@ class Products_model extends CI_Model {
     function get_cats()
 	{
 			
-			$this->db->order_by('order');
+		$this->db->order_by('order');
 		$query = $this->db->get('categories');
 		
 

@@ -233,3 +233,8 @@ jQuery.fn.pngFix = function(settings) {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
   }
+//jquery ui buttons
+	$(function() {
+		$("button, input:submit").button();
+		
+		});

@@ -5,7 +5,7 @@ class Welcome extends MY_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		
+		$this->load->model('captcha_model');
 	}
 	
 	function index()
@@ -49,7 +49,7 @@ class Welcome extends MY_Controller {
 			}
 		
 		$data['content'] = $this->content_model->get_content($data['menu']);
-		
+		$data['captcha'] = $this->captcha_model->initiate_captcha();
 		foreach($data['content'] as $row):
 			
 			$data['title'] = $row->title;
