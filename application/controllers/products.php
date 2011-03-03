@@ -31,6 +31,7 @@ class Products extends MY_Controller {
 		foreach($data['content'] as $row):
 			
 			$data['title'] = $row->product_name;
+			$data['sidebox'] = $row->sidebox;
 		
 		endforeach;
 		$data['main_content'] = "global/product";

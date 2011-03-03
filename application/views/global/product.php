@@ -2,6 +2,7 @@
 <?php foreach($content as $row):?>
 <h1><?=$row->product_name?></h1>
 
+
 <?php 
 $is_logged_in = $this->session->userdata('is_logged_in');
 		if(!isset($is_logged_in) || $is_logged_in == true)
@@ -20,4 +21,5 @@ else {
 <?=$body?>
 
 <?php endforeach;?>
+
 

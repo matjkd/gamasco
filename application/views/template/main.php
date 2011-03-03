@@ -79,19 +79,11 @@
  <?php } ?>
 
 
-<div id="section3">   
-     <div class="container_24" >
-The GMS Company. Gamasco House, 35 Hornsby Square, Southfields Industrial Park, Laindon, Essex SS15 6SD. <br/>
-Tel: 01268 419909 Fax: 01268 544346. Email office@gamasco.co.uk<br/>
-<strong>Europes Leading Supploer of Thermal Engineering Products</strong>
-    </div>
- </div>
+<?=$this->load->view('template/section3')?>
     
     
     <footer>
-    	<div class="container_24">
-footer 2
-		</div>
+<?=$this->load->view('template/footer')?>
     </footer>
   </div> 
 

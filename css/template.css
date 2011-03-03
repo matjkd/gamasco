@@ -33,8 +33,10 @@ background: url('/images/template/headerback.jpg') repeat-x;
 height:320px;
 position:relative;
 }
+
 .maincontent {
 padding-top:20px;
+padding-bottom:10px;
 }
 footer {
 background:#444444;

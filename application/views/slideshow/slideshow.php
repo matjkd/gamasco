@@ -27,7 +27,7 @@ border-radius: 5px;
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl1.png) no-repeat"/></div>
   </div> 
   
  	
@@ -42,20 +42,20 @@ border-radius: 5px;
   
     <div class="box"> 
 		<span>
-		<h2>Plumbers Thermal Protection Mats</h2>
+		<h2>Stove and Oven Spares</h2>
 		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
 		</p>
 		</span>
-		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl3.png) no-repeat"/></div>
   </div> 
   
     <div class="box"> 
 		<span>
-		<h2>Plumbers Thermal Protection Mats</h2>
-		<p>Thermapad Plumbers Pads have been manufactured in the UK by the GMS Company for the past <?=$age?> years, using high quality materials meeting the highest Health and Safety standards.
+		<h2>Flame Barrier Exhaust Wrap</h2>
+		<p>Can be used for thermal protection on exhaust systems in pleasure craft, motorcycles, go-karts, tractors, farm machinery, fork lift trucks and stationary engines where thermal protection is required.
 		</p>
 		</span>
-		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl2.png) no-repeat"/></div>
+		<div class="rounded_img" style="background:url(<?=base_url()?>images/slides/sl4.png) no-repeat"/></div>
   </div> 
 </div> 
 

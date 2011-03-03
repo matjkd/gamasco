@@ -1,6 +1,6 @@
 <?php foreach($cats as $row): ?>
 <div class="container_24 grid_6">
-			<h2><?=$row->cat_name?></h2>
+			<h2><a href="<?=base_url()?>welcome/main/<?=$row->cat_menu?>"><?=$row->cat_name?></a></h2>
 			<ul>
 			<?php foreach($products as $row2): ?>
 				
